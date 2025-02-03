@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Energético y Sostenibilidad</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Balance Energético y Sostenibilidad</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="technologies.html">Fuentes de Energía</a>
+        <a href="demand.html">Consumo y Demanda Energética</a>
+        <a href="balance.html" style="font-weight: bold; color: #004aad;">Balance Energético y Sostenibilidad</a>
+    </nav>
+
+    <div class="container" style="max-width: 1200px; display: flex; align-items: center; gap: 20px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <img src="../assets/img/bal_sost.jpeg" alt="La sostenibilidad energética" style="width:40%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        
+        <div style="flex: 1; text-align: justify;">
+            <h2 style="color: #004aad; margin-bottom: 10px;">La sostenibilidad energética en España</h2>
+            <p class="lead">
+                La <strong>sostenibilidad energética</strong> en España se ha convertido en un pilar fundamental para la transición hacia un modelo más eficiente y respetuoso con el medio ambiente. En los últimos años, el país ha apostado por un <strong>sistema energético diversificado</strong>, impulsado por políticas que fomentan el uso de fuentes <strong>renovables</strong> y la reducción de emisiones de <strong>CO₂</strong>. 
+            </p>
+            <p>
+                La expansión de la energía <strong>solar</strong> y <strong>eólica</strong> ha sido clave en este proceso, permitiendo que un porcentaje cada vez mayor de la electricidad provenga de fuentes limpias. Además, iniciativas como la <strong>descarbonización industrial</strong>, el impulso a la <strong>electrificación del transporte</strong> y la modernización de infraestructuras han mejorado la eficiencia energética.
+            </p>
+            <p>
+                Para consolidar esta transición, España está implementando soluciones innovadoras como el <strong>almacenamiento de energía</strong> y la digitalización de la <strong>red eléctrica</strong>, que permiten optimizar la gestión de la demanda y garantizar un suministro más estable. La combinación de inversión en tecnología, apoyo gubernamental y concienciación social será determinante para alcanzar un <strong>modelo energético sostenible</strong>.
+            </p>
+            
+            
+        </div>
+    </div>
+
+    <div class="container" style="max-width: 800px; display: flex; flex-direction: column; align-items: center; gap: 20px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+        <h2 style="color: #004aad; margin-bottom: 10px;">Calcula tu Huella de Carbono</h2>
+        
+        <p>Introduce tu consumo mensual de electricidad en <strong>kWh</strong> para estimar tu impacto ambiental.</p>
+        
+        <label for="energia" style="font-weight: bold;">Consumo de energía (kWh/mes):</label>
+        <input type="number" id="energia" placeholder="Ejemplo: 250" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 200px; text-align: center;">
+    
+        <button onclick="calcularHuella()" style="padding: 10px 20px; background: #004aad; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Calcular</button>
+        
+        <h3 id="resultado" style="color: #004aad; margin-top: 20px;"></h3>
+        
+        <p id="recomendaciones" style="text-align: center; max-width: 600px;"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados</p>
+        <p>Universidad Pontificia Comillas (ICAI)</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

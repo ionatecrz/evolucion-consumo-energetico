@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuentes de Energía en España</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Consumo y Demanda Energética</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="technologies.html" style="font-weight: bold; color: #004aad;">Fuentes de Energía</a>
+        <a href="demand.html">Consumo y Demanda Energética</a>
+        <a href="balance.html">Balance Energético y Sostenibilidad</a>
+    </nav>
+
+    <div class="container" style="max-width: 1200px; display: flex; align-items: center; gap: 20px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="map-container" style="flex: 1;">
+            <h2 style="color: #004aad; margin-bottom: 10px;">Mapa de Demanda Energética en España</h2>
+            <div id="map"></div>
+        </div>
+    
+        <div class="info-text" style="flex: 1;">
+            <p>España presenta un perfil energético diversificado, con una creciente participación de <strong>energías renovables</strong>. La demanda energética varía significativamente según la región y la estacionalidad, con un mayor consumo en los meses de invierno debido a la calefacción.</p>
+            <p><strong>Cataluña</strong> y <strong>Andalucía</strong> lideran el consumo energético, con una demanda de <strong>44.209 GWh</strong> y <strong>38.098 GWh</strong> respectivamente, debido a su población y actividad industrial.</p>
+            <p>En contraste, regiones como <strong>Melilla</strong> y <strong>Ceuta</strong> tienen una demanda mucho menor, con apenas <strong>202 GWh</strong> y <strong>186 GWh</strong>. Esto se debe a su menor población y dependencia de interconexiones eléctricas con la península.</p>
+            <p>La <strong>Comunidad de Madrid</strong> también presenta un alto consumo de <strong>27.112 GWh</strong>, en parte debido a su elevada densidad poblacional y actividad económica.</p>
+            <p>Por otro lado, <strong>Galicia</strong>, <strong>Castilla y León</strong> y <strong>País Vasco</strong> tienen una demanda considerable debido a la presencia de industrias clave, como la siderurgia y la manufactura.</p>
+            <p>Las principales fuentes de energía en España incluyen la <strong>eólica</strong>, <strong>solar</strong>, <strong>nuclear</strong> y el <strong>gas natural</strong>. La transición hacia un modelo más sostenible sigue siendo un desafío clave en el panorama energético nacional.</p>
+            <p>El impulso de la eficiencia energética y el almacenamiento energético serán fundamentales para lograr los objetivos de descarbonización y garantizar un suministro estable en el futuro.</p>
+            <p>Desliza el cursor sobre el <strong style="color: #004aad;">mapa interactivo</strong> para consultar la demanda energética de cada comunidad autónoma.</p>
+        </div>
+    </div>
+
+    <div class="container" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 40px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+        <h2 style="color: #004aad;">Descarga de Datos Energéticos</h2>
+        <form id="dataForm" style="display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: 600px;">
+            
+            <label for="name"><strong>Nombre:</strong></label>
+            <input type="text" id="name" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px;">
+            
+            <label for="email"><strong>Correo Electrónico:</strong></label>
+            <input type="email" id="email" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px;">
+            
+            <label for="regionSelect">Selecciona <strong>Comunidades Autónomas</strong> (Ctrl + Click para seleccionar varias):</label>
+            <select id="regionSelect" multiple required style="padding: 5px; height: 90px;"></select>
+
+            <label for="energyType"><strong>Fuente</strong> de Energía:</label>
+            <select id="energyType" multiple required style="height: 90px;"></select>
+    
+            <button type="button" onclick="downloadExcel()" style="align-self: center; padding: 10px; background: #004aad; color: white; border: none; border-radius: 5px; cursor: pointer;">Descargar Excel</button>
+        </form>
+    </div>
+
+    
+    <div class="tooltip" id="tooltip"></div>
+
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados</p>
+        <p>Universidad Pontificia Comillas (ICAI)</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
