@@ -21,10 +21,10 @@
         <a href="./pages/balance.html">Balance Energético y Sostenibilidad</a>
     </nav>
 
-    <div class="container" style="max-width: 1200px; display: flex; align-items: center; gap: 20px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-        <img src="./assets/img/energy_consumption.jpg" alt="Evolución de la demanda energética" style="width:40%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div class="responsive-container">
+        <img src="./assets/img/energy_consumption.jpg" alt="Evolución de la demanda energética">
         
-        <div style="flex: 1; text-align: justify;">
+        <div class="responsive-text">
             <h2 style="color: #004aad; margin-bottom: 10px;">Evolución de la demanda energética en España</h2>
             <p class="lead">
                 La evolución de la demanda energética en España refleja el <strong>crecimiento económico</strong>, las políticas energéticas y la transición hacia fuentes <strong>renovables</strong>. En los últimos años, hemos observado un cambio significativo en el consumo de electricidad, con un mayor énfasis en la <strong>sostenibilidad</strong> y la eficiencia energética.
@@ -38,16 +38,14 @@
         </div>
     </div>
 
-    <div class="container" id="tabla-consumo" style="max-width: 1200px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin-top: 20px;">
+    <div class="responsive-container" id="tabla-consumo" style="max-width: 1200px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin-top: 20px;">
         <h2 style="color: #004aad; margin-bottom: 10px; text-align: center;">Evolución del Consumo Energético en España</h2>
         <table style="width: 100%; border-collapse: collapse; text-align: center;">
             <thead>
                 <tr style="background: #004aad; color: white;">
                     <th style="padding: 10px; border: 1px solid #ddd;">Año</th>
                     <th style="padding: 10px; border: 1px solid #ddd;">Consumo Total (TWh)</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">Cambio (%)</th>
                     <th style="padding: 10px; border: 1px solid #ddd;">PIB Crecimiento (%)</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">Energía Renovable (%)</th>
                     <th style="padding: 10px; border: 1px solid #ddd;">Emisiones CO₂ (Mt)</th>
                 </tr>
             </thead>
@@ -55,67 +53,62 @@
                 <tr>
                     <td style="padding: 10px; border: 1px solid #ddd;">2020</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">250</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">-5.0</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">-11.0</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">45</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">220</td>
                 </tr>
                 <tr style="background: #f9f9f9;">
                     <td style="padding: 10px; border: 1px solid #ddd;">2021</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">265</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">+6.0</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">5.0</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">48</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">215</td>
                 </tr>
                 <tr>
                     <td style="padding: 10px; border: 1px solid #ddd;">2022</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">270</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">+1.9</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">4.5</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">52</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">205</td>
                 </tr>
                 <tr style="background: #f9f9f9;">
                     <td style="padding: 10px; border: 1px solid #ddd;">2023</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">275</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">+1.8</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">2.7</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">55</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">195</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="container" style="max-width: 1200px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
-        <iframe width="40%" height="250" src="https://www.youtube.com/embed/V6rr3y6En2M" 
-            title="DOCUMENTAL | XXI, el siglo de la transición energética" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen 
-            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); float: left; margin: 15px 20px 10px 0;">
+    <div class="expert-container">
+        <h2>¿Qué dicen los expertos?</h2>
+        <p>
+            <strong>Javier Peón</strong>, exmiembro de la Comisión Nacional de Energía, analiza la 
+            <a href="#tabla-consumo">
+                evolución del consumo energético en España,
+            </a> destacando el papel cada vez más relevante de las <strong>energías renovables</strong> y la persistente dependencia del gas natural. Señala que, a pesar del crecimiento sostenido en la generación renovable, esta aún no es suficiente para suplir completamente la demanda, lo que obliga a mantener el gas como una fuente clave de respaldo en el sistema eléctrico.
+        </p>
+        
+        <p>
+            Explica que esta dependencia del gas responde a la necesidad de garantizar <strong>estabilidad</strong> en el suministro, ya que las energías renovables, como la <strong>eólica</strong> y la solar, dependen de factores climáticos y no siempre pueden cubrir la demanda en todo momento. Esta realidad plantea retos significativos en la transición energética, donde es crucial encontrar mecanismos que permitan una mayor integración de las renovables sin comprometer la seguridad del sistema.
+        </p>
+        
+        <p>
+            Además, Peón destaca que el modelo de fijación de precios en el mercado eléctrico, basado en un sistema <strong>marginalista</strong>, favorece al gas y contribuye a la volatilidad de los costos de la electricidad. Subraya la importancia de adoptar medidas <strong>regulatorias</strong> adecuadas para evitar que la dependencia del gas siga impactando en los precios y para fomentar un marco más estable que incentive la inversión en tecnologías limpias.
+        </p>
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/V6rr3y6En2M" 
+            title="DOCUMENTAL | XXI, el siglo de la transición energética" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
         </iframe>
     
-        <div style="text-align: justify;">
-            <h2 style="color: #004aad; margin-bottom: 10px;">¿Qué dicen los expertos?</h2>
-            <p>
-                <strong>Javier Peón</strong>, exmiembro de la Comisión Nacional de Energía, analiza la 
-                <a href="#tabla-consumo" style="color: #004aad; text-decoration: none; font-weight: bold;">
-                    evolución del consumo energético en España,
-                </a> destacando el papel cada vez más relevante de las <strong>energías renovables</strong> y la persistente dependencia del gas natural. Señala que, a pesar del crecimiento sostenido en la generación renovable, esta aún no es suficiente para suplir completamente la demanda, lo que obliga a mantener el gas como una fuente clave de respaldo en el sistema eléctrico.
-            </p>
-            
-            <p>
-                Explica que esta dependencia del gas responde a la necesidad de garantizar <strong>estabilidad</strong> en el suministro, ya que las energías renovables, como la <strong>eólica</strong> y la solar, dependen de factores climáticos y no siempre pueden cubrir la demanda en todo momento. Esta realidad plantea retos significativos en la transición energética, donde es crucial encontrar mecanismos que permitan una mayor integración de las renovables sin comprometer la seguridad del sistema.
-            </p>
-            <p>
-                Además, Peón destaca que el modelo de fijación de precios en el mercado eléctrico, basado en un sistema <strong>marginalista</strong>, favorece al gas y contribuye a la volatilidad de los costos de la electricidad. Subraya la importancia de adoptar medidas <strong>regulatorias</strong> adecuadas para evitar que la dependencia del gas siga impactando en los precios y para fomentar un marco más estable que incentive la inversión en tecnologías limpias.
-            </p>
-            <p>
-                Para más información y acceder al video completo, puedes verlo aquí: <a href="https://www.youtube.com/watch?v=V6rr3y6En2M" target="_blank">Javier Peón analiza el consumo energético en España</a>
-            </p>
-        </div>
+        <p>
+            Para más información y acceder al video completo, puedes verlo aquí: 
+            <a href="https://www.youtube.com/watch?v=V6rr3y6En2M" target="_blank">
+                Javier Peón analiza el consumo energético en España
+            </a>
+        </p>
     </div>
+    
 
 
     <footer>

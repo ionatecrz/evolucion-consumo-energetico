@@ -12,7 +12,7 @@ Este proyecto consiste en una página web estática que analiza la evolución de
     - `chart.csv`: Datos de evolución del consumo energético.
     - `energy_sources.csv`: Información sobre las fuentes de energía.
   - **`img/`**: Imágenes utilizadas en la web (`bal_sost.jpeg`, `chart.svg`, `energy_consumption.jpg`, `favicon.ico`).  
-  - **`js/`**: Archivo `script.js` que maneja la interactividad de la página.  
+  - **`js/`**: Archivos que manejan la interactividad de la página (`script_graph.js`,`script_map.js`).  
 
 - **`pages/`**  
   - `balance.html`: Análisis del balance energético y la sostenibilidad.  
