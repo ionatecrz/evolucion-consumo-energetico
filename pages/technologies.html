@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuentes de Energía en España</title>
+    <title data-key="title_technologies">Fuentes de Energía en España</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Fuentes de Energía en España</h1>
+        <h1 data-key="main_heading_technologies">Fuentes de Energía en España</h1>
     </header>
 
     <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="technologies.html" style="font-weight: bold; color: #004aad;">Fuentes de Energía</a>
-        <a href="demand.html">Consumo y Demanda Energética</a>
-        <a href="balance.html">Balance Energético y Sostenibilidad</a>
+        <a href="../index.html" data-key="nav_home">Inicio</a>
+        <a href="technologies.html" style="font-weight: bold; color: #004aad;" data-key="nav_technologies">Fuentes de Energía</a>
+        <a href="demand.html" data-key="nav_demand">Consumo y Demanda Energética</a>
+        <a href="balance.html" data-key="nav_balance">Balance Energético y Sostenibilidad</a>
     </nav>
 
+    <select id="language-selector">
+        <option value="es" data-key="lang_es">Español</option>
+        <option value="en" data-key="lang_en">English</option>
+        <option value="fr" data-key="lang_fr">Français</option>
+    </select>
+
     <div class="container" style="max-width: 1200px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin-top: 20px;">
-        <h2 style="color: #004aad; margin-bottom: 10px; text-align: center;">Evolución del Agregado Energético en España</h2>
+        <h2 style="color: #004aad; margin-bottom: 10px; text-align: center;" data-key="energy_aggregate_heading">Evolución del Agregado Energético en España</h2>
         
-        <p style="text-align: justify;"> España ha experimentado una evolución significativa en su matriz energética en los últimos años. El país ha avanzado en la adopción de energías renovables, reduciendo su dependencia de fuentes fósiles y buscando alcanzar una mayor <strong>sostenibilidad</strong>. </p> 
-        <p style="text-align: justify;"> La transición energética ha sido impulsada por políticas gubernamentales, avances tecnológicos y un creciente compromiso con la <strong>descarbonización</strong>. En este contexto, la energía eólica y solar han ganado una participación relevante en el <strong>agregado energético</strong>, contribuyendo a una menor emisión de gases de efecto invernadero y a una mayor seguridad en el suministro eléctrico. </p> 
-        <p style="text-align: justify;"> Asimismo, la <strong>modernización</strong> de las infraestructuras y la integración de sistemas de almacenamiento han permitido una mayor estabilidad en la red eléctrica, optimizando el uso de la energía generada a partir de fuentes limpias. Sin embargo, persisten desafíos, como la intermitencia de algunas fuentes renovables y la necesidad de mejorar las interconexiones eléctricas con otros países. </p> 
-        <p style="text-align: justify;"> La siguiente <strong>tabla</strong> muestra la evolución del agregado energético en términos de generación de electricidad, destacando el papel creciente de las <strong>energías renovables</strong> en el sistema eléctrico español:</p>
+        <p style="text-align: justify;" data-key="energy_aggregate_text1"> España ha experimentado una evolución significativa en su matriz energética en los últimos años. El país ha avanzado en la adopción de energías renovables, reduciendo su dependencia de fuentes fósiles y buscando alcanzar una mayor <strong>sostenibilidad</strong>. </p> 
+        <p style="text-align: justify;" data-key="energy_aggregate_text2"> La transición energética ha sido impulsada por políticas gubernamentales, avances tecnológicos y un creciente compromiso con la <strong>descarbonización</strong>. En este contexto, la energía eólica y solar han ganado una participación relevante en el <strong>agregado energético</strong>, contribuyendo a una menor emisión de gases de efecto invernadero y a una mayor seguridad en el suministro eléctrico. </p> 
+        <p style="text-align: justify;" data-key="energy_aggregate_text3"> Asimismo, la <strong>modernización</strong> de las infraestructuras y la integración de sistemas de almacenamiento han permitido una mayor estabilidad en la red eléctrica, optimizando el uso de la energía generada a partir de fuentes limpias. Sin embargo, persisten desafíos, como la intermitencia de algunas fuentes renovables y la necesidad de mejorar las interconexiones eléctricas con otros países. </p> 
+        <p style="text-align: justify;" data-key="energy_aggregate_text4"> La siguiente <strong>tabla</strong> muestra la evolución del agregado energético en términos de generación de electricidad, destacando el papel creciente de las <strong>energías renovables</strong> en el sistema eléctrico español:</p>
 
         <table style="width: 100%; border-collapse: collapse; text-align: center;">
             <thead>
                 <tr style="background: #004aad; color: white;">
-                    <th style="padding: 10px; border: 1px solid #ddd;">Año</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">Energía Nuclear (%)</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">Energía Eólica (%)</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">Energía Solar (%)</th>
+                    <th style="padding: 10px; border: 1px solid #ddd;" data-key="table_year">Año</th>
+                    <th style="padding: 10px; border: 1px solid #ddd;" data-key="table_nuclear">Energía Nuclear (%)</th>
+                    <th style="padding: 10px; border: 1px solid #ddd;" data-key="table_wind">Energía Eólica (%)</th>
+                    <th style="padding: 10px; border: 1px solid #ddd;" data-key="table_solar">Energía Solar (%)</th>
                 </tr>
             </thead>
             <tbody>
@@ -55,9 +61,9 @@
 
         <br>
 
-        <p style="text-align: justify;">
+        <p style="text-align: justify;" data-key="energy_aggregate_more_info">
             Si deseas conocer más sobre el impacto del consumo energético y la evolución de la <strong>demanda</strong> en España, visita nuestra 
-            sección <a href="demand.html" style="color: #004aad; font-weight: bold;">Consumo y Demanda Energética</a>.
+            sección <a href="demand.html" style="color: #004aad; font-weight: bold;" data-key="energy_aggregate_link">Consumo y Demanda Energética</a>.
         </p>
         
 
@@ -66,18 +72,19 @@
     <div id="ad-container"></div>
 
     <div class="container" style="max-width: 1200px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; margin-top: 20px;">
-        <h2 style="color: #004aad; margin-bottom: 10px; text-align: center;">Evolución de las Fuentes de Energía en España</h2>
+        <h2 style="color: #004aad; margin-bottom: 10px; text-align: center;" data-key="energy_sources_evolution">Evolución de las Fuentes de Energía en España</h2>
         <canvas id="graficoEnergia" style="max-width: 100%;"></canvas>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <footer>
-        <p>&copy; 2025 Todos los derechos reservados</p>
-        <p>Universidad Pontificia Comillas (ICAI)</p>
+        <p data-key="footer_rights">&copy; 2025 Todos los derechos reservados</p>
+        <p data-key="footer_university">Universidad Pontificia Comillas (ICAI)</p>
     </footer>
 
     <script src="../assets/js/script_graph.js"></script>
     <script src="../assets/js/script_ads.js"></script>
+    <script src="../assets/js/script_lang.js"></script>
 
 
 </body>
