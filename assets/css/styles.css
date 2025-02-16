@@ -204,3 +204,104 @@ footer {
     box-sizing: border-box;
     font-size: 1rem; 
 }
+
+#ad-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 72rem;
+}
+
+.ad-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(135deg, #f8f9fc, #e3e7ee);
+    border: 0.2rem solid #004aad;
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    max-width: 38rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    gap: 1.2rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+}
+
+.ad-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+.ad-card img {
+    width: 10rem;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.ad-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.ad-card h3 {
+    font-size: 1.3rem;
+    color: #004aad;
+    margin-bottom: 0.5rem;
+}
+
+.ad-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.6rem;
+}
+
+.ad-price {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #222;
+    background: rgba(0, 74, 173, 0.1);
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: #004aad;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.buy-button:hover {
+    background: #003580;
+    color: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 48em) {
+    #ad-container {
+        width: 95%;
+    }
+
+    .ad-card {
+        flex-direction: column;
+        text-align: center;
+        max-width: 28rem;
+    }
+
+    .ad-card img {
+        width: 100%;
+        height: auto;
+    }
+}
