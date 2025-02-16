@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const page = window.location.pathname.split("/").pop();
     const category = pageCategories[page];
 
-    fetch(`https://dummyjson.com/products/category/${category}`)
+    fetch(`https://dummyjson.com/products/category/mobile-accessories`)
     .then(response => {
         if (!response.ok) {
             throw new Error(`Error ${response.status}: Categoría no encontrada`);
