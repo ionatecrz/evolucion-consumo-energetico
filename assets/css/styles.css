@@ -367,3 +367,48 @@ footer {
         border-radius: 0.4rem;
     }
 }
+
+
+#climate-data-container {
+    max-width: 37.5rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8f9fc, #e3e7ee);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border: 0.125rem solid #004aad;
+}
+
+
+#climate-title {
+    font-size: 1.4rem;
+    color: #004aad;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid rgba(0, 74, 173, 0.3);
+    display: inline-block;
+}
+
+
+#climate-data p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+#climate-data strong {
+    color: #004aad;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#climate-data em {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}

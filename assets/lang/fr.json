@@ -70,7 +70,17 @@
     "carbon_footprint_label": "Consommation d'énergie (kWh/mois) :",
     "calculate_button": "Calculer",
     "calculation_result": "",
-    "calculation_recommendations": ""
+    "calculation_recommendations": "",
+    "climate": {
+        "title": "Impact du Climat sur la Consommation d'Énergie",
+        "content": "<p>Consultez l'impact de la température et du rayonnement solaire sur la consommation d'énergie.</p><div id='climate-data'></div>",
+        "temperature": "Température",
+        "cloudcover": "Couverture Nuageuse",
+        "radiation": "Rayonnement Solaire",
+        "updated": "Dernière mise à jour",
+        "error": "Erreur lors de la récupération des données climatiques."
+    }
+
 }
     
     

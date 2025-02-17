@@ -70,6 +70,16 @@
     "carbon_footprint_label": "Energy consumption (kWh/month):",
     "calculate_button": "Calculate",
     "calculation_result": "",
-    "calculation_recommendations": ""
+    "calculation_recommendations": "",
+    "climate": {
+        "title": "Climate Impact on Energy Consumption",
+        "content": "<p>Check how temperature and solar radiation affect energy consumption.</p><div id='climate-data'></div>",
+        "temperature": "Temperature",
+        "cloudcover": "Cloud Cover",
+        "radiation": "Solar Radiation",
+        "updated": "Last updated",
+        "error": "Error retrieving climate data."
+    }
+
 }
     
