@@ -39,20 +39,23 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
     }
 
-    function loadDefaultLanguage() {
-        const defaultLang = "es";
-        fetch(`assets/lang/${defaultLang}.json`)
+    function loadSelectedLanguage() {
+        const selectedLanguage = localStorage.getItem("selectedLanguage") || "es";
+        languageSelector.value = selectedLanguage;
+
+        fetch(`assets/lang/${selectedLanguage}.json`)
             .then(response => response.json())
             .then(data => {
                 window.translations = data;
-                languageSelector.value = defaultLang;
                 fetchClimateData();
             })
-            .catch(error => console.error("Error al cargar el idioma por defecto:", error));
+            .catch(error => console.error("Error al cargar el idioma almacenado:", error));
     }
 
     function changeLanguage() {
         const selectedLanguage = languageSelector.value;
+        localStorage.setItem("selectedLanguage", selectedLanguage);
+
         fetch(`assets/lang/${selectedLanguage}.json`)
             .then(response => response.json())
             .then(data => {
@@ -64,6 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     languageSelector.addEventListener("change", changeLanguage);
 
-    loadDefaultLanguage();
+    loadSelectedLanguage();
     setInterval(fetchClimateData, 600000);
 });

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function changeLanguage(lang) {
-        const langPath = getLangPath(); 
+        const langPath = getLangPath();
 
         fetch(`${langPath}${lang}.json`)
             .then(response => response.json())
@@ -30,10 +30,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const savedLang = localStorage.getItem("selectedLanguage") || "es";
-    selector.value = savedLang;
-    changeLanguage(savedLang);
 
-    selector.addEventListener("change", (event) => {
-        changeLanguage(event.target.value);
-    });
+    if (selector) {
+        selector.value = savedLang;
+        selector.addEventListener("change", (event) => {
+            const selectedLang = event.target.value;
+            if (selectedLang !== localStorage.getItem("selectedLanguage")) {
+                changeLanguage(selectedLang);
+                selector.value = selectedLang;
+            }
+        });
+    }
+
+    setTimeout(() => {
+        if (selector.value !== savedLang) {
+            selector.value = savedLang; 
+        }
+    }, 100);
+
+    changeLanguage(savedLang);
 });
