@@ -1,4 +1,4 @@
-# Página web estática
+# Evolución del Consumo Energético
 
 ## Descripción del Proyecto
 
@@ -10,11 +10,19 @@ Este proyecto consiste en una página web estática que analiza la evolución de
 
 - **`assets/`**  
   - **`css/`**: Contiene la hoja de estilos `styles.css`.  
-  - **`data/`**: 
+  - **`data/`**:
     - `chart.csv`: Datos de evolución del consumo energético.
     - `energy_sources.csv`: Información sobre las fuentes de energía.
   - **`img/`**: Imágenes utilizadas en la web (`bal_sost.jpeg`, `chart.svg`, `energy_consumption.jpg`, `favicon.ico`).  
-  - **`js/`**: Archivos que manejan la interactividad de la página (`script_graph.js`,`script_map.js`).  
+  - **`js/`**: Archivos que manejan la interactividad de la página:
+    - `script_ads.js`: Inserta publicidad dinámica basada en la API de DummyJSON.
+    - `script_climate.js`: Maneja la consulta de datos climáticos dinámico mediante el uso de una API.
+    - `script_fp.js`: Funcionalidad adicional específica.
+    - `script_graph.js`: Maneja la visualización de datos con D3.js.
+    - `script_lang.js`: Controla la selección de idioma.
+    - `script_map.js`: Implementa la funcionalidad del mapa interactivo.
+  
+- **`lang/`**: Archivos JSON para soporte multilingüe en inglés (`en.json`), español (`es.json`) y francés (`fr.json`).
 
 - **`pages/`**  
   - `balance.html`: Análisis del balance energético y la sostenibilidad.  
@@ -32,8 +40,9 @@ Este proyecto consiste en una página web estática que analiza la evolución de
 
 - **Pestaña de Balance Energético y Sostenibilidad**: Proporciona información sobre la sostenibilidad del consumo energético, así como una calculadora de huella de carbono para estimar el impacto ambiental del usuario.  
 
-- **Descarga de Datos**: Permite a los usuarios descargar conjuntos de datos energéticos en formato Excel para su análisis.  
+- **Mapa Interactivo de Precios del Combustible**: Utiliza datos en tiempo real de la API del Gobierno de España sobre gasolineras, representando las más cercanas con colores según el precio del combustible.  
 
+- **Publicidad Dinámica**: Se muestran anuncios relevantes para el usuario en función de la página visitada.  
 
 ## Instrucciones para su uso
 
@@ -49,14 +58,15 @@ Este proyecto consiste en una página web estática que analiza la evolución de
 
 - **HTML5** y **CSS3** para la estructura y el diseño de la web.  
 - **JavaScript (JS)** para la interactividad y la manipulación de datos.  
-- **Chart.js** para la visualización de datos en gráficos.  
-- **Fetch API** para la carga de datos desde archivos CSV.  
+- **D3.js** para la visualización de datos en gráficos.  
+- **Fetch API** para la carga de datos desde archivos CSV y la API de gasolineras.  
 
 ## Autor
 
-- **Nombre del autor**: Íñigo de Oñate Cruz
-- **Contacto**: [LinkedIn](https://www.linkedin.com/in/%C3%AD%C3%B1igo-de-o%C3%B1ate-cruz-855b55263/)
+- **Nombre del autor**: Íñigo de Oñate Cruz  
+- **Contacto**: [LinkedIn](https://www.linkedin.com/in/%C3%AD%C3%B1igo-de-o%C3%B1ate-cruz-855b55263/)  
 
 ## Licencia
 
 Este proyecto está bajo la licencia [MIT License](LICENSE), permitiendo su uso, modificación y distribución.
+
